@@ -19,6 +19,7 @@ WebView 无需导入任何依赖。
 ### WebView
 
 ```javascript
+// 参数和返回均为可选，类型为JSONObject
 wex.invoke('hello', {
     name: "WebView"
 }, function(res) {
