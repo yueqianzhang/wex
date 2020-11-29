@@ -2,8 +2,8 @@
 
 ## features
 
-- 统一化。iOS/Android 在 WebView 使用相同 API 调用，无需在 WebView 端注入 JSBridge 变量
-- 无耦合。不依赖 WebView 具体实现
+- 统一化。iOS/Android 在 WebView 使用相同 API 调用    
+- 无耦合。不依赖 WebView 具体实现    
 - 轻量级。单文件，仅 100 行左右代码
 
 ## installation
