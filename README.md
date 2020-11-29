@@ -34,6 +34,7 @@ wex.invoke('hello', {
 
 self.wex = [Wex bridgeForWebView:self.webview];
 [self.wex registerName:@"hello" handler:^(NSDictionary * _Nonnull params, WexResponseCallback  _Nonnull responseCallback) {
+    // responseCallback 可选，不调用表示只处理，不返回任何内容
     responseCallback(@{@"name": [NSString stringWithFormat:@"Hello %@, I'M %@", params[@"name"], @"native"]});
 }];
 ```
@@ -47,6 +48,7 @@ wex = Wex.bridgeFor(webView);
 wex.registerHandler("hello", new Wex.Handler() {
     @Override
     public void onReceive(JSONObject data, Wex.ResponseCallback responseCallback) {
+        // responseCallback 可选，不调用表示只处理，不返回任何内容
         try {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("name", String.format("Hello %s, I'M %s", data.optString("name"), "native"));
