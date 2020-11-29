@@ -60,4 +60,5 @@ wex.registerHandler("hello", new Wex.Handler() {
 
 ## TODO
 - iOS CocoaPods & Android Gradle 集成
+- 统一 iOS/Android JS 实现
 - 增加 API 文档自动生成
