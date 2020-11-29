@@ -8,8 +8,10 @@
 
 ## installation
 
-Native 直接导入文件，即可开始使用。    
-WebView 无需导入任何依赖。
+Native 直接导入 Wex，即可开始使用。    
+- iOS Wex 位置：https://github.com/yueqianzhang/wex/tree/main/wex_android/app/src/main/java/plus/zyq/wex_android/wex    
+- Android Wex 位置：https://github.com/yueqianzhang/wex/tree/main/wex_android/wex_ios/wex    
+WebView 无需导入任何依赖。    
 
 ## usage
 
