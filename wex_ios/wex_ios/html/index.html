@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEX DEMO</title>
+</head>
+
+<body>
+    <div id="message-area"></div>
+    <button onclick="sayHello()">SAY HELLO TO NATIVE</button>
+    <script>
+        const MY_NAME = 'WebView123';
+
+        function sayHello(params) {
+            wex.invoke('nativeSayHello', {
+                name: MY_NAME
+            }, function(res) {
+                appendText('Hello' + res.xxx);
+            });
+        }
+
+        function appendText(text) {
+            var message = document.getElementById('message-area');
+            var p = document.createElement('p');
+            p.innerText = text;
+            message.appendChild(p);
+        }
+    </script>
+</body>
+
+</html>
