@@ -1,4 +1,4 @@
-# WEX - WebView Extension with Naitve（WebViewJavaScriptBridge/JSBridge）
+# WEX - WebView Extension with Naitve (WebViewJavaScriptBridge/JSBridge)
 
 ## features
 
